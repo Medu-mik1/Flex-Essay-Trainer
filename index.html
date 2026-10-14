@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FLEX Essay Trainer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🚀 FLEX Essay Trainer</div>
+    <p>Ағылшын тілінде эссе жазуды жаттықтыру платформасы</p>
+  </header>
+
+  <div class="row">
+    <div class="widget"><div class="label">⏱ Уақыт</div><div class="value" id="timerVal">15:00</div></div>
+    <div class="widget"><div class="label">📝 Сөздер</div><div class="value" id="wordVal">0</div></div>
+    <div class="widget"><div class="label">🔤 Әріптер</div><div class="value" id="charVal">0</div></div>
+  </div>
+
+  <div class="card prompt-card">
+    <span class="cat-badge" id="catBadge">Leadership</span>
+    <div id="promptText">Батырманы басып, эссе тақырыбын алыңыз.</div>
+  </div>
+
+  <div class="card">
+    <textarea id="essayArea" placeholder="Эссеңізді осы жерге жазыңыз..." disabled></textarea>
+    <div class="star-panel">
+      <div class="star-item"><b>S</b> — Situation: жағдайды сипаттаңыз</div>
+      <div class="star-item"><b>T</b> — Task: міндетті анықтаңыз</div>
+      <div class="star-item"><b>A</b> — Action: не істегеніңізді жазыңыз</div>
+      <div class="star-item"><b>R</b> — Result: нәтижені көрсетіңіз</div>
+    </div>
+    <div class="btns">
+      <button id="newBtn">🎲 Жаңа эссе алу</button>
+      <button id="startBtn">▶ Start</button>
+      <button id="submitBtn" disabled>📤 Эссені жіберу</button>
+    </div>
+  </div>
+  <footer>FLEX дайындық құралы · STAR әдісін қолданыңыз</footer>
+</div>
+
+<div class="notice" id="notice"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
